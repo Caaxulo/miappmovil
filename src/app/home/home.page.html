@@ -1,0 +1,46 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title class="welcome-title">
+      Bienvenido {{ username }}
+      &nbsp;
+      <ion-icon name="search-outline"></ion-icon> <!-- Icono de lupa de Ionicons -->
+      <ion-icon name="add-circle" (click)="zoomIn()"></ion-icon> <!-- Icono de más para zoom in -->
+      <ion-icon name="remove-circle" (click)="zoomOut()"></ion-icon> <!-- Icono de menos para zoom out -->
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-row>
+    <ion-col sizeLg="6" sizeMd="12" sizeXs="12">
+      <ion-card [routerLink]="['/mundo-abierto']">
+        <img src="../../assets/img-home/mundo-abierto.jpg" />
+        <ion-card-header>
+          <ion-card-title>Mundo abierto</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+          Los juegos de mundo abierto ofrecen exploración libre en entornos vastos y misiones no lineales. Destacan por su libertad y profundidad.
+        </ion-card-content>
+      </ion-card>
+      <ion-card [routerLink]="['/rpg']">
+        <img src="../../assets/img-home/rpg.jpg" />
+        <ion-card-header>
+          <ion-card-title>RPG</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+          Los juegos RPG se centran en el desarrollo de personajes y la narrativa, con progresión a través de misiones y mejoras de habilidades.
+        </ion-card-content>
+      </ion-card>
+      <ion-card [routerLink]="['/simulacion']">
+        <img src="../../assets/img-home/simulacion.jpg" />
+        <ion-card-header>
+          <ion-card-title>Simulación</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+          Los juegos de simulación recrean actividades del mundo real, permitiendo a los jugadores gestionar y experimentar diversas situaciones y entornos.
+        </ion-card-content>
+      </ion-card>
+    </ion-col>
+  </ion-row>
+</ion-content>
+

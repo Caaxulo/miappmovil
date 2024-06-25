@@ -1,0 +1,24 @@
+ion-menu {
+    ion-content {
+      ion-button {
+        
+        --border-radius: 0;
+        --background: transparent;
+        --color: inherit;
+        --padding-start: 0;
+        --padding-end: 0;
+        --padding-top: 8px;
+        --padding-bottom: 8px;
+        display: block;
+        width: 100%;
+        text-align: left;
+        border: none;
+  
+        
+        &:hover {
+          --background: rgba(55, 42, 80, 0.486); 
+        }
+      }
+    }
+  }
+  

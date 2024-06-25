@@ -1,0 +1,36 @@
+ion-card {
+    margin-bottom: 20px; 
+    max-width: 800px; 
+  }
+  
+  ion-card img {
+    width: 100%; 
+    height: auto; 
+  }
+  
+  ion-card-title {
+    font-weight: bold; 
+    text-align: center; 
+  }
+  
+  ion-card-content {
+    padding: 16px; 
+    text-align: center; 
+  }
+  
+  ion-header {
+    text-align: center; 
+    padding: 10px 0; 
+  }
+  
+  ion-title {
+    font-weight: bold; 
+  }
+  
+  ion-card {
+    transition: background-color 0.3s ease; 
+  }
+  
+  ion-card:hover {
+    background-color: #182f3f; 
+  }

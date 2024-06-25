@@ -1,0 +1,74 @@
+ion-content {
+    --background: #7f67d6; 
+  }
+  
+  .amiibos-container {
+    padding: 20px; 
+  }
+  
+  .amiibo-card {
+    background-color: #509be24b; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    overflow: hidden; 
+    margin-bottom: 20px; 
+    transition: transform 0.3s ease-in-out; 
+  }
+  
+  .amiibo-card:hover {
+    transform: translateY(-5px); 
+  }
+  
+  .amiibo-image-container {
+    width: 150px; 
+    height: 150px; 
+    margin: 0 auto; 
+    overflow: hidden; 
+    padding-top: 15px;
+  }
+  
+  .amiibo-image {
+    width: 100%; 
+    height: auto; 
+    object-fit: contain; 
+    display: block; 
+    max-width: 100%; 
+  }
+  
+  .amiibo-card-title {
+    text-align: center; /* Centra el título del amiibo */
+    font-size: 1.5em; /* Aumenta el tamaño del texto */
+    font-weight: bold; /* Aplica negrita al texto */
+    color: #fff; /* Color blanco para el texto */
+  }
+  
+  .amiibo-card-content {
+    padding: 10px; 
+    font-size: 1em;
+    color: #fff; 
+    text-align: center;
+  }
+  
+  ion-card {
+    img {
+      width: 100%; 
+      height: auto; 
+      object-fit: contain; 
+      display: block; 
+      max-width: 100%;
+      max-height: 100%;
+    }
+  }
+
+  ion-header {
+    text-align: center;  
+  }
+
+  ion-card-title {
+    text-align: center; /* Centra el título del amiibo */
+    font-size: 1.5em; /* Aumenta el tamaño del texto */
+    font-weight: bold; /* Aplica negrita al texto */
+    color: #fff; /* Color blanco para el texto */
+  }
+
+  

@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>
+      Bienvenido {{ username }}
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="amiibos-container">
+  <ion-row>
+    <ion-col size="6" size-md="4" size-lg="3" *ngFor="let amiibo of amiibos">
+      <ion-card class="amiibo-card">
+        <div class="amiibo-image-container">
+          <img [src]="amiibo.image" class="amiibo-image" />
+        </div>
+        <ion-card-header>
+          <ion-card-title>{{ amiibo.name }}</ion-card-title>
+        </ion-card-header>
+        <ion-card-content class="amiibo-card-content">
+          Del juego: {{ amiibo.gameSeries }}
+        </ion-card-content>
+      </ion-card>
+    </ion-col>
+  </ion-row>
+</ion-content>

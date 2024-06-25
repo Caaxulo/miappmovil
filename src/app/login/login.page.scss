@@ -1,0 +1,26 @@
+ion-button {
+    --background: #007bff;
+    --color: #ffffff;
+    --border-radius: 10px;
+}
+
+ion-item {
+    --ion-background-color: #ffffff;
+    --ion-border-color: #cccccc;
+}
+
+ion-label {
+    color: #333333;
+}
+
+ion-label {
+    margin-bottom: 10px; 
+    font-weight: bold; 
+  }
+  
+  ion-input {
+    --padding-start: 8px; 
+    --padding-end: 8px;
+    --padding-top: 30px;
+    --padding-bottom: 12px;
+  }

@@ -1,0 +1,58 @@
+ion-card {
+  margin-bottom: 20px; 
+  max-width: 800px; 
+}
+
+ion-card img {
+  width: 100%; 
+  height: auto; 
+}
+
+ion-card-title {
+  font-weight: bold; 
+  text-align: center; 
+}
+
+ion-card-content {
+  padding: 16px; 
+  text-align: center; 
+}
+
+ion-header {
+  text-align: center; 
+  padding: 10px 0; 
+}
+
+ion-title {
+  font-weight: bold; 
+}
+
+ion-card {
+  transition: background-color 0.3s ease; 
+}
+
+ion-card:hover {
+  background-color: #182f3f; 
+}
+.zoom-buttons {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 10px;
+}
+
+ion-card-content {
+  padding: 16px;
+  text-align: center;
+  transition: font-size 0.3s ease; /* Transición suave al cambiar el tamaño */
+}
+
+ion-icon {
+  font-size: 1.2rem; /* Tamaño de los iconos de zoom */
+  cursor: pointer;
+  margin-left: 10px; /* Ajuste el margen izquierdo según sea necesario */
+}
+
+ion-icon[name="search-outline"] {
+  font-size: 1.5rem; /* Tamaño del icono de lupa */
+  margin-left: 5px; /* Ajuste adicional para alinear más a la derecha */
+}
