@@ -8,19 +8,19 @@ import { AuthService } from '../services/auth.service';
 })
 export class HomePage implements OnInit, OnDestroy {
   username: string = '';
-  zoomLevel: number = 100; // Nivel de zoom inicial (porcentaje)
-  originalFontSize: string = ''; // Almacena el tamaño de fuente original
+  zoomLevel: number = 100; 
+  originalFontSize: string = ''; 
 
   constructor(private authService: AuthService) {}
 
   ngOnInit() {
     this.username = this.authService.username;
-    // Guardar el tamaño de fuente original al cargar la página
+    
     this.originalFontSize = window.getComputedStyle(document.body).fontSize;
   }
 
   ngOnDestroy() {
-    // Restaurar tamaño de fuente original al salir de la página
+    
     const cards = document.querySelectorAll('ion-card-content');
     cards.forEach(card => {
       card.style.fontSize = this.originalFontSize;
@@ -33,7 +33,7 @@ export class HomePage implements OnInit, OnDestroy {
   }
 
   zoomOut() {
-    if (this.zoomLevel > 100) { // Establece el tamaño mínimo
+    if (this.zoomLevel > 100) { 
       this.zoomLevel -= 10;
       this.updateZoom();
     }
@@ -42,7 +42,7 @@ export class HomePage implements OnInit, OnDestroy {
   updateZoom() {
     const cards = document.querySelectorAll('ion-card-content');
     cards.forEach(card => {
-      card.style.fontSize = `${Math.max(this.zoomLevel, 100)}%`; // Garantiza el tamaño mínimo
+      card.style.fontSize = `${Math.max(this.zoomLevel, 100)}%`;
     });
   }
 }
