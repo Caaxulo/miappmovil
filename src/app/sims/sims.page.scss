@@ -1,0 +1,57 @@
+.logo {
+    display: block;
+    margin: 0 auto 20px auto;
+    width: 500px; /* Ajusta el tamaño según sea necesario */
+    height: auto;
+  }
+  
+  .description {
+    text-align: center;
+    margin: 15px 0;
+    font-size: 16px;
+  }
+  
+  .details {
+    text-align: center;
+    margin: 15px 0;
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .rating {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  ion-icon {
+    color: #FFD700; /* Color dorado para las estrellas */
+    font-size: 24px;
+  }
+  
+  .rating-number {
+    margin-left: 10px;
+    font-size: 18px;
+    color: #333;
+  }
+  
+  iframe {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+  }
+  ion-title {
+    font-weight: bold; 
+  }
+
+  ion-header {
+    text-align: center; 
+    padding: 10px 0; 
+  }

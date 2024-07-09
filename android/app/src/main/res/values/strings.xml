@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">myaplicacion</string>
+    <string name="title_activity_main">myaplicacion</string>
+    <string name="package_name">com.gamelibrary.myapp</string>
+    <string name="custom_url_scheme">com.gamelibrary.myapp</string>
+</resources>

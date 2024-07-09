@@ -1,0 +1,42 @@
+<ion-header>
+  <ion-title>
+    Bienvenido {{ username }}
+  </ion-title>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+  <ion-card>
+    <ion-card-content>
+      <img src="../../assets/img-simulacion/farminglogo.webp" class="logo" />
+
+      <p class="description">
+        Farming Simulator 22 es un simulador de agricultura desarrollado por Giants Software. En esta entrega, los jugadores pueden 
+        experimentar la vida agrícola gestionando sus propias granjas. Desde el cultivo de cultivos hasta la cría de animales, 
+        Farming Simulator 22 ofrece una experiencia realista y detallada del trabajo agrícola moderno.
+      </p>
+
+      <p class="details">
+        Los jugadores pueden utilizar una variedad de equipos agrícolas reales para cultivar campos, cosechar cosechas y cuidar 
+        ganado. El juego incluye mejoras gráficas, nuevas mecánicas de juego y un mundo abierto expansivo que explorar. Además, 
+        ofrece opciones multijugador para colaborar con otros jugadores en actividades agrícolas.
+      </p>
+
+      <div class="rating">
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star-half"></ion-icon>
+        <span class="rating-number">4.5/5</span>
+      </div>
+
+      <iframe [src]="videoUrl" width="560" height="315" frameborder="0" allowfullscreen></iframe>
+      
+      <div class="buttons">
+        <ion-button color="primary">Comprar en PS Store</ion-button>
+        <ion-button color="secondary">Comprar en Xbox Store</ion-button>
+        <ion-button color="tertiary">Comprar en Steam</ion-button>
+      </div>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

@@ -1,0 +1,41 @@
+<ion-header>
+  <ion-title>
+    Bienvenido {{ username }}
+  </ion-title>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+  <ion-card>
+    <ion-card-content>
+      <img src="../../assets/img-mundo-abierto/eldenringlogo.png" class="logo" />
+
+      <p class="description">
+        Elden Ring es un próximo videojuego de acción y rol desarrollado por FromSoftware y publicado por Bandai Namco Entertainment. 
+        El juego está siendo dirigido por Hidetaka Miyazaki, conocido por su trabajo en la serie Soulsborne.
+      </p>
+
+      <p class="details">
+        En Elden Ring, los jugadores explorarán un mundo abierto vasto y misterioso, lleno de ruinas antiguas, criaturas fantásticas y 
+        desafíos mortales. El juego promete una jugabilidad desafiante y una narrativa envolvente que ha generado grandes expectativas 
+        entre los fanáticos del género.
+      </p>
+
+      <div class="rating">
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star-half"></ion-icon>
+        <span class="rating-number">4.5/5</span>
+      </div>
+
+      <iframe [src]="videoUrl" width="560" height="315" frameborder="0" allowfullscreen></iframe>
+      
+      <div class="buttons">
+        <ion-button color="primary">Comprar en PS Store</ion-button>
+        <ion-button color="secondary">Comprar en Xbox Store</ion-button>
+        <ion-button color="tertiary">Comprar en Steam</ion-button>
+      </div>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

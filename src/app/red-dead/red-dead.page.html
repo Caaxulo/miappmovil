@@ -1,0 +1,43 @@
+<ion-header>
+  <ion-title>
+    Bienvenido {{ username }}
+  </ion-title>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+  <ion-card>
+    <ion-card-content>
+      <img src="../../assets/img-mundo-abierto/red-dead-logo.png" class="logo" />
+
+      <p class="description">
+        Red Dead Redemption 2 es un videojuego de acción-aventura de mundo abierto, desarrollado y publicado por Rockstar Games. 
+        Es la tercera entrega de la serie Red Dead y una precuela de Red Dead Redemption. Ambientado en 1899, sigue a Arthur Morgan, 
+        un forajido y miembro de la pandilla de Van der Linde, mientras lucha por sobrevivir contra las fuerzas de la ley, otros 
+        forajidos y el declive de la era del Salvaje Oeste.
+      </p>
+
+      <p class="details">
+        El juego cuenta con una narrativa profunda y rica, una jugabilidad inmersiva y un vasto mundo abierto lleno de vida y 
+        detalles impresionantes. Los jugadores pueden participar en diversas actividades como caza, pesca, equitación y duelos 
+        con armas, mientras exploran la vasta extensión del paisaje americano.
+      </p>
+
+      <div class="rating">
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star-half"></ion-icon>
+        <span class="rating-number">4.5/5</span>
+      </div>
+
+      <iframe [src]="videoUrl" width="560" height="315" frameborder="0" allowfullscreen></iframe>
+      
+      <div class="buttons">
+        <ion-button color="primary">Comprar en PS Store</ion-button>
+        <ion-button color="secondary">Comprar en Xbox Store</ion-button>
+        <ion-button color="tertiary">Comprar en Steam</ion-button>
+      </div>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

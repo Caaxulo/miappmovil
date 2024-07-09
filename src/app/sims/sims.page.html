@@ -1,0 +1,41 @@
+<ion-header>
+  <ion-title>
+    Bienvenido {{ username }}
+  </ion-title>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+  <ion-card>
+    <ion-card-content>
+      <img src="../../assets/img-simulacion/simslogo.png" class="logo" />
+
+      <p class="description">
+        Los Sims 4 es un juego de simulación de vida desarrollado por Maxis y publicado por Electronic Arts. En este juego, los jugadores 
+        pueden crear y controlar personajes en un mundo virtual, construir casas y satisfacer las necesidades diarias de sus Sims.
+      </p>
+
+      <p class="details">
+        Los jugadores tienen la libertad de personalizar a sus Sims con una amplia gama de opciones, desde la apariencia física hasta 
+        la personalidad y las aspiraciones. Pueden explorar diferentes carreras, formar relaciones, y explorar el mundo abierto del juego 
+        mientras experimentan con la vida virtual.
+      </p>
+
+      <div class="rating">
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star-half"></ion-icon>
+        <span class="rating-number">4.5/5</span>
+      </div>
+
+      <iframe [src]="videoUrl" width="560" height="315" frameborder="0" allowfullscreen></iframe>
+      
+      <div class="buttons">
+        <ion-button color="primary">Comprar en PS Store</ion-button>
+        <ion-button color="secondary">Comprar en Xbox Store</ion-button>
+        <ion-button color="tertiary">Comprar en Steam</ion-button>
+      </div>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

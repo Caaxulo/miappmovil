@@ -41,6 +41,42 @@ const routes: Routes = [
     path: 'registro',
     loadChildren: () => import('./registro/registro.module').then(m => m.RegistroPageModule)
   },
+  {
+    path: 'red-dead',
+    loadChildren: () => import('./red-dead/red-dead.module').then( m => m.RedDeadPageModule)
+  },
+  {
+    path: 'horizon',
+    loadChildren: () => import('./horizon/horizon.module').then( m => m.HorizonPageModule)
+  },
+  {
+    path: 'elden-ring',
+    loadChildren: () => import('./elden-ring/elden-ring.module').then( m => m.EldenRingPageModule)
+  },
+  {
+    path: 'kingdomhearts',
+    loadChildren: () => import('./kingdomhearts/kingdomhearts.module').then( m => m.KingdomheartsPageModule)
+  },
+  {
+    path: 'finalfantasy',
+    loadChildren: () => import('./finalfantasy/finalfantasy.module').then( m => m.FinalfantasyPageModule)
+  },
+  {
+    path: 'thewitcher',
+    loadChildren: () => import('./thewitcher/thewitcher.module').then( m => m.ThewitcherPageModule)
+  },
+  {
+    path: 'farmingsimulator',
+    loadChildren: () => import('./farmingsimulator/farmingsimulator.module').then( m => m.FarmingsimulatorPageModule)
+  },
+  {
+    path: 'houseflipper',
+    loadChildren: () => import('./houseflipper/houseflipper.module').then( m => m.HouseflipperPageModule)
+  },
+  {
+    path: 'sims',
+    loadChildren: () => import('./sims/sims.module').then( m => m.SimsPageModule)
+  },
 ];
 
 @NgModule({

@@ -1,0 +1,42 @@
+<ion-header>
+  <ion-title>
+    Bienvenido {{ username }}
+  </ion-title>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+  <ion-card>
+    <ion-card-content>
+      <img src="../../assets/img-rpg/thewitcherlogo.png" class="logo" />
+
+      <p class="description">
+        The Witcher 3: Wild Hunt es un videojuego de rol y acción desarrollado por CD Projekt Red y publicado en 2015. Basado en 
+        la serie de novelas del escritor polaco Andrzej Sapkowski, el juego continúa la historia del cazador de monstruos Geralt 
+        de Rivia en un mundo abierto lleno de criaturas fantásticas, conflictos políticos y decisiones morales impactantes.
+      </p>
+
+      <p class="details">
+        Los jugadores asumen el papel de Geralt, quien busca a su hija adoptiva mientras enfrenta a poderosos enemigos y toma 
+        decisiones que afectan el curso del juego y su desenlace. Con gráficos impresionantes, una narrativa rica y misiones 
+        secundarias profundas, The Witcher 3 ofrece una experiencia de juego inmersiva y emocionante.
+      </p>
+
+      <div class="rating">
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star-half"></ion-icon>
+        <span class="rating-number">4.5/5</span>
+      </div>
+
+      <iframe [src]="videoUrl" width="560" height="315" frameborder="0" allowfullscreen></iframe>
+      
+      <div class="buttons">
+        <ion-button color="primary">Comprar en PS Store</ion-button>
+        <ion-button color="secondary">Comprar en Xbox Store</ion-button>
+        <ion-button color="tertiary">Comprar en Steam</ion-button>
+      </div>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

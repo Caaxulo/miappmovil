@@ -1,0 +1,41 @@
+<ion-header>
+  <ion-title>
+    Bienvenido {{ username }}
+  </ion-title>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+  <ion-card>
+    <ion-card-content>
+      <img src="../../assets/img-rpg/finalfantasylogop.webp" class="logo" />
+
+      <p class="description">
+        Final Fantasy VII Remake es un juego de rol y acción desarrollado y publicado por Square Enix. Es una reimaginación del juego 
+        original de 1997, con mejoras gráficas y de jugabilidad que expanden la historia y los personajes del título original.
+      </p>
+
+      <p class="details">
+        El juego sigue la historia del mercenario ex-SOLDADO Cloud Strife, quien se une al grupo ecoterrorista Avalanche para luchar 
+        contra la megacorporación Shinra y su explotación del planeta. Los jugadores exploran la ciudad de Midgar y sus alrededores, 
+        participando en combates en tiempo real y estratégicos.
+      </p>
+
+      <div class="rating">
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star-half"></ion-icon>
+        <span class="rating-number">4.5/5</span>
+      </div>
+
+      <iframe [src]="videoUrl" width="560" height="315" frameborder="0" allowfullscreen></iframe>
+      
+      <div class="buttons">
+        <ion-button color="primary">Comprar en PS Store</ion-button>
+        <ion-button color="secondary">Comprar en Xbox Store</ion-button>
+        <ion-button color="tertiary">Comprar en Steam</ion-button>
+      </div>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

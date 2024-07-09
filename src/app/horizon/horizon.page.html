@@ -1,0 +1,42 @@
+<ion-header>
+  <ion-title>
+    Bienvenido {{ username }}
+  </ion-title>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+  <ion-card>
+    <ion-card-content>
+      <img src="../../assets/img-mundo-abierto/horizonlogo.png" class="logo" />
+
+      <p class="description">
+        Horizon Zero Dawn es un videojuego de acción y rol desarrollado por Guerrilla Games y publicado por Sony Interactive Entertainment. 
+        Ambientado en un mundo postapocalíptico dominado por máquinas, sigue a Aloy, una joven cazadora, mientras descubre su destino 
+        y el de la humanidad.
+      </p>
+
+      <p class="details">
+        El juego ofrece una narrativa profunda y emocionante, una jugabilidad inmersiva y un vasto mundo abierto lleno de vida y 
+        detalles impresionantes. Los jugadores pueden explorar diversos biomas, cazar máquinas y criaturas salvajes, y descubrir 
+        los secretos de un mundo olvidado.
+      </p>
+
+      <div class="rating">
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+        <span class="rating-number">5/5</span>
+      </div>
+
+      <iframe [src]="videoUrl" width="560" height="315" frameborder="0" allowfullscreen></iframe>
+      
+      <div class="buttons">
+        <ion-button color="primary">Comprar en PlayStation Store</ion-button>
+        <ion-button color="secondary">Comprar en Steam</ion-button>
+        <ion-button color="tertiary">Comprar en Epic Games Store</ion-button>
+      </div>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

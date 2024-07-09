@@ -1,0 +1,42 @@
+<ion-header>
+  <ion-title>
+    Bienvenido {{ username }}
+  </ion-title>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+  <ion-card>
+    <ion-card-content>
+      <img src="../../assets/img-rpg/kingdomheartslogo.webp" class="logo" />
+
+      <p class="description">
+        Kingdom Hearts III es un videojuego de acción y rol desarrollado por Square Enix y publicado por Disney Interactive Studios. 
+        Es la duodécima entrega principal de la serie Kingdom Hearts y la secuela directa de Kingdom Hearts II, continuando la historia 
+        de Sora y sus amigos en su lucha contra la oscuridad.
+      </p>
+
+      <p class="details">
+        El juego combina elementos de acción en tiempo real con mecánicas de rol, permitiendo a los jugadores explorar mundos inspirados 
+        en películas de Disney y personajes clásicos de Square Enix. Ofrece una narrativa emocionante y jugabilidad fluida, con combates 
+        espectaculares y un sistema de habilidades diversificado.
+      </p>
+
+      <div class="rating">
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star-half"></ion-icon>
+        <span class="rating-number">4.5/5</span>
+      </div>
+
+      <iframe [src]="videoUrl" width="560" height="315" frameborder="0" allowfullscreen></iframe>
+      
+      <div class="buttons">
+        <ion-button color="primary">Comprar en PlayStation Store</ion-button>
+        <ion-button color="secondary">Comprar en Xbox Store</ion-button>
+        <ion-button color="tertiary">Comprar en Steam</ion-button>
+      </div>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

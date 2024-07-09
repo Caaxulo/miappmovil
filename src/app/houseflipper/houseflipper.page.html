@@ -1,0 +1,42 @@
+<ion-header>
+  <ion-title>
+    Bienvenido {{ username }}
+  </ion-title>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+  <ion-card>
+    <ion-card-content>
+      <img src="../../assets/img-simulacion/houseflipperlogo.webp" class="logo" />
+
+      <p class="description">
+        House Flipper es un simulador de renovación de casas desarrollado por Empyrean y publicado por PlayWay. En este juego, los jugadores 
+        asumen el papel de un emprendedor que compra, repara y renueva propiedades para obtener ganancias. Desde la limpieza hasta la 
+        decoración, House Flipper ofrece una experiencia detallada de renovación de interiores.
+      </p>
+
+      <p class="details">
+        Los jugadores pueden realizar tareas variadas como pintar paredes, instalar muebles, reparar instalaciones y realizar mejoras 
+        estructurales en las casas. Con gráficos realistas y herramientas de juego intuitivas, House Flipper permite a los jugadores 
+        transformar propiedades y venderlas por un precio más alto.
+      </p>
+
+      <div class="rating">
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star"></ion-icon>
+        <ion-icon name="star-half"></ion-icon>
+        <span class="rating-number">4.5/5</span>
+      </div>
+
+      <iframe [src]="videoUrl" width="560" height="315" frameborder="0" allowfullscreen></iframe>
+      
+      <div class="buttons">
+        <ion-button color="primary">Comprar en PS Store</ion-button>
+        <ion-button color="secondary">Comprar en Xbox Store</ion-button>
+        <ion-button color="tertiary">Comprar en Steam</ion-button>
+      </div>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

@@ -1,18 +1,9 @@
 import type { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
-  appId: 'io.ionic.starter',
+  appId: 'com.gamelibrary.myapp',
   appName: 'myaplicacion',
-  webDir: 'www',
-
-  plugins: {
-    TextZoom: {
-      sync: true              // Configuración específica para el plugin TextZoom
-    }
-    // Otros plugins aquí si los tienes
-  },
+  webDir: 'www'
 };
-
-
 
 export default config;
