@@ -43,39 +43,48 @@ const routes: Routes = [
   },
   {
     path: 'red-dead',
-    loadChildren: () => import('./red-dead/red-dead.module').then( m => m.RedDeadPageModule)
+    loadChildren: () => import('./red-dead/red-dead.module').then( m => m.RedDeadPageModule),
+    canActivate: [AuthGuardService]
   },
   {
     path: 'horizon',
-    loadChildren: () => import('./horizon/horizon.module').then( m => m.HorizonPageModule)
+    loadChildren: () => import('./horizon/horizon.module').then( m => m.HorizonPageModule),
+    canActivate: [AuthGuardService]
   },
   {
     path: 'elden-ring',
-    loadChildren: () => import('./elden-ring/elden-ring.module').then( m => m.EldenRingPageModule)
+    loadChildren: () => import('./elden-ring/elden-ring.module').then( m => m.EldenRingPageModule),
+    canActivate: [AuthGuardService]
   },
   {
     path: 'kingdomhearts',
-    loadChildren: () => import('./kingdomhearts/kingdomhearts.module').then( m => m.KingdomheartsPageModule)
+    loadChildren: () => import('./kingdomhearts/kingdomhearts.module').then( m => m.KingdomheartsPageModule),
+    canActivate: [AuthGuardService]
   },
   {
     path: 'finalfantasy',
-    loadChildren: () => import('./finalfantasy/finalfantasy.module').then( m => m.FinalfantasyPageModule)
+    loadChildren: () => import('./finalfantasy/finalfantasy.module').then( m => m.FinalfantasyPageModule),
+    canActivate: [AuthGuardService]
   },
   {
     path: 'thewitcher',
-    loadChildren: () => import('./thewitcher/thewitcher.module').then( m => m.ThewitcherPageModule)
+    loadChildren: () => import('./thewitcher/thewitcher.module').then( m => m.ThewitcherPageModule),
+    canActivate: [AuthGuardService]
   },
   {
     path: 'farmingsimulator',
-    loadChildren: () => import('./farmingsimulator/farmingsimulator.module').then( m => m.FarmingsimulatorPageModule)
+    loadChildren: () => import('./farmingsimulator/farmingsimulator.module').then( m => m.FarmingsimulatorPageModule),
+    canActivate: [AuthGuardService]
   },
   {
     path: 'houseflipper',
-    loadChildren: () => import('./houseflipper/houseflipper.module').then( m => m.HouseflipperPageModule)
+    loadChildren: () => import('./houseflipper/houseflipper.module').then( m => m.HouseflipperPageModule),
+    canActivate: [AuthGuardService]
   },
   {
     path: 'sims',
-    loadChildren: () => import('./sims/sims.module').then( m => m.SimsPageModule)
+    loadChildren: () => import('./sims/sims.module').then( m => m.SimsPageModule),
+    canActivate: [AuthGuardService]
   },
 ];
 
