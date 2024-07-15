@@ -1,12 +1,21 @@
 <ion-header>
-  <ion-title>
-    Bienvenido {{ username }}
-  </ion-title>
+  <ion-toolbar>
+    <div class="header-content">
+      <ion-title class="welcome-title">
+        Bienvenido {{ username }}
+      </ion-title>
+      <div class="icon-container">
+        <ion-icon name="text"></ion-icon>
+        <ion-icon name="add-circle-outline" (click)="zoomIn()"></ion-icon>
+        <ion-icon name="remove-circle-outline" (click)="zoomOut()"></ion-icon>
+      </div>
+    </div>
+  </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true" class="ion-padding">
+<ion-content>
   <ion-card>
-    <ion-card-content>
+    <ion-card-content class="zoom-animation">
       <img src="../../assets/img-mundo-abierto/red-dead-logo.png" class="logo" />
 
       <p class="description">
@@ -34,9 +43,9 @@
       <iframe [src]="videoUrl" width="560" height="315" frameborder="0" allowfullscreen></iframe>
       
       <div class="buttons">
-        <ion-button color="primary">Comprar en PS Store</ion-button>
-        <ion-button color="secondary">Comprar en Xbox Store</ion-button>
-        <ion-button color="tertiary">Comprar en Steam</ion-button>
+        <ion-button color="primary" href="https://store.playstation.com/es-es/product/EP1004-CUSA08519_00-REDEMPTIONFULL02" target="_blank">Comprar en PS Store</ion-button>
+        <ion-button color="secondary" href="https://www.xbox.com/es-CL/games/store/red-dead-redemption-2/bpswgqbw7r3g" target="_blank">Comprar en Xbox Store</ion-button>
+        <ion-button color="tertiary" href="https://store.steampowered.com/app/1174180/Red_Dead_Redemption_2/" target="_blank">Comprar en Steam</ion-button>
       </div>
     </ion-card-content>
   </ion-card>

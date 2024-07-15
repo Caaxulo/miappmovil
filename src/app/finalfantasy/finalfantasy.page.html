@@ -1,10 +1,19 @@
 <ion-header>
-  <ion-title>
-    Bienvenido {{ username }}
-  </ion-title>
+  <ion-toolbar>
+    <div class="header-content">
+      <ion-title class="welcome-title">
+        Bienvenido {{ username }}
+      </ion-title>
+      <div class="icon-container">
+        <ion-icon name="text"></ion-icon>
+        <ion-icon name="add-circle-outline" (click)="zoomIn()"></ion-icon>
+        <ion-icon name="remove-circle-outline" (click)="zoomOut()"></ion-icon>
+      </div>
+    </div>
+  </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true" class="ion-padding">
+<ion-content>
   <ion-card>
     <ion-card-content>
       <img src="../../assets/img-rpg/finalfantasylogop.webp" class="logo" />

@@ -20,39 +20,38 @@ ion-card-content {
 
 ion-header {
   text-align: center; 
-  padding: 10px 0; 
+  padding: 0; 
+  margin-bottom: 10px; 
 }
 
-ion-title {
-  font-weight: bold; 
-}
-
-ion-card {
-  transition: background-color 0.3s ease; 
-}
-
-ion-card:hover {
-  background-color: #182f3f; 
-}
-.zoom-buttons {
+ion-toolbar {
   display: flex;
-  justify-content: space-around;
-  margin-bottom: 10px;
+  justify-content: center; 
 }
 
-ion-card-content {
-  padding: 16px;
-  text-align: center;
-  transition: font-size 0.3s ease; 
+.header-content {
+  display: flex;
+  align-items: center; 
 }
 
-ion-icon {
+.welcome-title {
+  font-weight: bold; 
+  margin: 0 auto; 
+}
+
+.icon-container {
+  display: flex;
+  align-items: center;
+  margin-left: auto; 
+}
+
+.icon-container ion-icon {
   font-size: 1.2rem; 
   cursor: pointer;
-  margin-left: 10px; 
+  margin-left: 8px; 
 }
 
-ion-icon[name="search-outline"] {
-  font-size: 1.5rem; 
-  margin-left: 5px; 
+
+.zoom-animation {
+  transition: font-size 0.3s ease-in-out;
 }
